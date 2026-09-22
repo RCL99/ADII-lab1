@@ -1,5 +1,4 @@
 """Заготовки задач на базовый Python."""
-import re
 
 from grader_contracts.python_basics import PositiveIntegerInput, TextInput, VectorPairInput
 
@@ -108,6 +107,7 @@ def is_balanced_number(data: PositiveIntegerInput) -> bool:
 
     return sum(int(c) for c in left) == sum(int(c) for c in right)
 
+# ТЕСТЫ
 if __name__ == '__main__':
     assert count_vowels(TextInput("hello world")) == 3
 
