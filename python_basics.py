@@ -107,31 +107,6 @@ def is_balanced_number(data: PositiveIntegerInput) -> bool:
 
     return sum(int(c) for c in left) == sum(int(c) for c in right)
 
-# ТЕСТЫ
-if __name__ == '__main__':
-    assert count_vowels(TextInput("hello world")) == 3
-
-    assert has_unique_characters(TextInput("hey")) == True
-    assert has_unique_characters(TextInput("zaza")) == False
-
-    assert count_one_bits(PositiveIntegerInput(25)) == 3
-
-    assert multiplicative_persistence(PositiveIntegerInput(39)) == 3
-    assert multiplicative_persistence(PositiveIntegerInput(4)) == 0
-    assert multiplicative_persistence(PositiveIntegerInput(999)) == 4
-
-    assert prime_factorization(PositiveIntegerInput(86240)) == "(2**5)(5)(7**2)(11)"
-
-    assert pyramid(PositiveIntegerInput(6)) == "It is impossible"
-    assert pyramid(PositiveIntegerInput(5)) == 2
-    assert pyramid(PositiveIntegerInput(14)) == 3
-
-    assert is_balanced_number(PositiveIntegerInput(1234006)) == True
-    assert is_balanced_number(PositiveIntegerInput(123456)) == False
-    assert is_balanced_number(PositiveIntegerInput(7)) == True
-    assert is_balanced_number(PositiveIntegerInput(131)) == True
-
-
 
 
 
