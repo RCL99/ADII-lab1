@@ -40,7 +40,6 @@ def multiplicative_persistence(data: PositiveIntegerInput) -> int:
     return count
 
 
-
 def mse(data: VectorPairInput) -> float:
     predicted, expected = data.predicted, data.expected
 
@@ -61,17 +60,17 @@ def prime_factorization(data: PositiveIntegerInput) -> str:
 
     while number > 1:
         if number % div == 0:
-            count = 0
+            power = 0
             # count = степень
             while number % div == 0:
-                count += 1
+                power += 1
                 number //= div
 
             # div ** count
-            if count == 1:
+            if power == 1:
                 result.append(f"({div})")
             else:
-                result.append(f"({div}**{count})")
+                result.append(f"({div}**{power})")
         else:
             div += 1
 
