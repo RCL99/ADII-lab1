@@ -8,7 +8,6 @@ def count_vowels(data: TextInput) -> int:
 
     return sum(c in vowels for c in text.lower())
 
-
 def has_unique_characters(data: TextInput) -> bool:
     text = data.value
     already_existing = []
@@ -19,13 +18,11 @@ def has_unique_characters(data: TextInput) -> bool:
         already_existing.append(c)
     return True
 
-
 def count_one_bits(data: PositiveIntegerInput) -> int:
     number = data.value
 
     bits = "{0:b}".format(number)
     return sum(c == '1' for c in bits)
-
 
 def multiplicative_persistence(data: PositiveIntegerInput) -> int:
     number = data.value
@@ -61,12 +58,12 @@ def prime_factorization(data: PositiveIntegerInput) -> str:
     while number > 1:
         if number % div == 0:
             power = 0
-            # count = степень
+            # power = степень
             while number % div == 0:
                 power += 1
                 number //= div
 
-            # div ** count
+            # power ** count
             if power == 1:
                 result.append(f"({div})")
             else:
